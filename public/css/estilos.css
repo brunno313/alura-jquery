@@ -37,3 +37,13 @@ body {
     display: none;
     color: red;
 }
+
+#spinner {
+    display: none;
+}
+
+#frase-id {
+    width: 40px;
+    margin-left: 15px;
+    text-align: center;
+}
