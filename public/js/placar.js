@@ -1,4 +1,5 @@
 $("#botao-placar").click(mostraPlacar);
+$("#botao-sync").click(sincronizaPlacar);
 
 function mostraPlacar() {
     $(".placar").stop().slideToggle(400);
@@ -52,4 +53,7 @@ function removeLinha() {
     linha.fadeOut(function(){
         linha.remove();
     });
+}
+
+function sincronizaPlacar() {
 }
