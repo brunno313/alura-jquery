@@ -56,4 +56,11 @@ function removeLinha() {
 }
 
 function sincronizaPlacar() {
+    var placar = [];
+    var linhas = $("tbody > tr");
+
+    linhas.each(function() {
+        var usuario = $(this).find("td:nth-child(1)");
+        var palavras = $(this).find("td:nth-child(2)");
+    });
 }
