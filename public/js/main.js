@@ -18,6 +18,10 @@ $(function() {
         speed: 300,
         adaptiveHeight: true,
     });
+
+    $(".tooltip").tooltipster({
+        trigger: 'custom'
+    });
 });
 
 function atualizaTamanhoFrase() {
