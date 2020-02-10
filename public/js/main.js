@@ -8,6 +8,16 @@ $(function() {
     inicializaMarcadores();
     $("#botao-reiniciar").click(reiniciaJogo);
     atualizaPlacar();
+
+    $(".usuarios").select2({
+        tags: true
+    });
+
+    $(".slider").slick({
+        dots: true,
+        speed: 300,
+        adaptiveHeight: true,
+    });
 });
 
 function atualizaTamanhoFrase() {
