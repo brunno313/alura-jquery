@@ -1,0 +1,21 @@
+{
+  "name": "alura-jquery",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "snapshot": "build-storybook && percy-storybook --widths=320,1280"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunno313/alura-jquery.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunno313/alura-jquery/issues"
+  },
+  "homepage": "https://github.com/brunno313/alura-jquery#readme",
+  "devDependencies": {
+    "@percy/storybook": "^3.3.0"
+  }
+}
