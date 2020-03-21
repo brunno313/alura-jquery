@@ -1,21 +1,17 @@
 version: 2.1
-
 orbs:
- node: circleci/node@1.1.6
- percy: percy/agent@0.1.2
-
+  node: circleci/node@1.1.6
 jobs:
- run_tests:
-   parallelism: 3
-   steps:
-     - attach_workspace:
-         at: .
-     - run: echo "your tests run here"
-
+  build-and-test:
+    executor:
+      name: node/default
+    steps:
+      - checkout
+      - node/with-cache:
+          steps:
+            - run: npm install
+            - run: npm test
 workflows:
- test:
-   jobs:
-     - run_tests
-     - percy/finalize_all:
-         requires:
-           - run_tests
+    build-and-test:
+      jobs:
+        - build-and-test
